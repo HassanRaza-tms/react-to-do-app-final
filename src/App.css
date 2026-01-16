@@ -1,0 +1,247 @@
+#root {
+  /* max-width: 1280px; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+div {
+  overflow: hidden;
+}
+
+h2 {
+  text-decoration: underline double;
+}
+
+.the-only-sec {
+  width: 70%;
+  background-color: White;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.heading-main {
+  color: black;
+}
+
+.div-for-buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: block;
+  width: 20%;
+  color: white;
+  padding: 12px 0;
+}
+
+a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.frst_btn {
+  background-color: orangered;
+}
+
+.scnd_btn {
+  background-color: dodgerblue;
+}
+
+.thrd_btn {
+  background-color: #9b02a6;
+}
+
+.frth_btn {
+  background-color: #04bf49;
+}
+
+.fifth_btn {
+  background-color: black;
+}
+
+.div-for-other-purpose {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.for_adding_tasks {
+  background-color: orangered;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.for_all_tasks {
+  background-color: dodgerblue;
+  padding: 0 20px;
+}
+
+.for_pending_tasks {
+  background-color: #9b02a6;
+  padding: 0 20px;
+}
+
+.for_completed_tasks {
+  background-color: #04bf49;
+  padding: 0 20px;
+}
+
+.for_deleted_tasks {
+  background-color: black;
+  padding: 0 20px;
+}
+
+input[type="text"] {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  padding: 10px 25px 10px 0px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  width: 75%;
+}
+
+input:focus-visible {
+  outline: 0px !important;
+  border-bottom: 2px solid white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+button.add_task_btn {
+  background-color: white;
+  color: orangered;
+  border-radius: 35px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+button.add_task_btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 0px !important;
+}
+
+.restore-btn:hover {
+  background-color: white !important;
+  color: green !important;
+  border-color: green !important;
+}
+
+.delete-btn:hover {
+  background-color: white !important;
+  color: red !important;
+  border-color: red !important;
+}
+
+.task-div {
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .the-only-sec {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .div-for-buttons {
+    width: 95%;
+  }
+
+  .div-for-other-purpose {
+    width: 95%;
+  }
+
+  input[type="text"] {
+    width: 65%;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  a:hover {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .the-only-sec {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .div-for-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div-for-other-purpose {
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .for_adding_tasks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+  }
+
+  button.add_task_btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .task-div {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .task-div span,
+  .task-div div {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .task-div div {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .delete-btn,
+  .restore-btn {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 5px;
+  }
+}
